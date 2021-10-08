@@ -1,4 +1,4 @@
-## Oiii eu sou a Rafaella Ballerini, criadora de conteúdo de programação e tecnologia!
+## Olá, bem vindo ao meu github :)
 <div align="center">
   <a href="https://github.com/danemmanuel">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=danemmanuel&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
