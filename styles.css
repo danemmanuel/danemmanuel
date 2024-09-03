@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    height: 100vh;
+    background-color: #343a40;
+    /* dark background for sidebar */
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.sidebar-title {
+    color: #e91e63;
+    /* pink color for "wevy" */
+    margin-right: 5px;
+}
+
+.desk {
+    color: #fff;
+    /* white color for "Desk" */
+}
+
+#sidebar .components {
+    padding: 20px 0;
+}
+
+#sidebar .components a {
+    font-size: 0.95rem;
+    color: #adb5bd;
+    /* light gray for links */
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+#sidebar .components a:hover {
+    background: #495057;
+    color: #fff;
+}
+
+#content {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+}
+
+.card-title {
+    margin-top: 10px;
+}
+
+.table-dark {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.table-dark th,
+.table-dark td {
+    vertical-align: middle;
+}
+
+.table-dark .table-hover tbody tr:hover {
+    background-color: #495057;
+}
+
+.navbar-light .navbar-brand {
+    color: #343a40;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    #sidebar .components {
+        padding: 10px 0;
+    }
+
+    #sidebar .components a {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    #content {
+        padding: 10px;
+    }
+
+    .navbar-light .navbar-brand {
+        font-size: 1.25rem;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .card .card-body {
+        text-align: center;
+    }
+
+    .row.text-center {
+        flex-direction: column;
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    /* Stack the cards vertically on mobile */
+    .row.text-center>.col {
+        width: 100%;
+        max-width: 100%;
+    }
+}

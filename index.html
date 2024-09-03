@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="d-flex">
+      <!-- Sidebar -->
+      <nav id="sidebar" class="bg-dark text-white p-3">
+        <div class="sidebar-header">
+          <h3 class="sidebar-title">wevy <span class="desk">Desk</span></h3>
+        </div>
+        <ul class="list-unstyled components">
+          <li>
+            <a href="#" class="text-white">
+              <!-- SVG Icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-plus-circle"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+                />
+                <path
+                  d="M16 8a8 8 0 1 0-16 0 8 8 0 0 0 16 0zM1 8a7 7 0 1 1 14 0A7 7 0 0 1 1 8z"
+                />
+              </svg>
+              Abrir Ticket
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-white">
+              <!-- SVG Icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-list-ul"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3.5 13a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM0 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1h-10a.5.5 0 0 1-.5-.5zm3.5-6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm0 5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1h-10a.5.5 0 0 1-.5-.5zm10-10A.5.5 0 0 1 14 3v10a.5.5 0 0 1-.5.5h-10A.5.5 0 0 1 3 13V3a.5.5 0 0 1 .5-.5h10zM4 4v8h8V4H4z"
+                />
+              </svg>
+              Todos Tickets
+            </a>
+          </li>
+          <!-- Additional Menu Items -->
+        </ul>
+        <ul class="list-unstyled components mt-auto">
+          <li>
+            <a href="#" class="text-white">
+              <!-- SVG Icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-box-arrow-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 13a.5.5 0 0 1 .5.5h7a.5.5 0 0 1 0 1h-7a1.5 1.5 0 0 1-1.5-1.5V3A1.5 1.5 0 0 1 6.5 1.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5zm6.354-3.854a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L11.293 9H2.5a.5.5 0 0 1 0-1h8.793L8.646 5.646a.5.5 0 1 1 .708-.708l3 3z"
+                />
+              </svg>
+              Logout
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-white">
+              <!-- SVG Icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-file-earmark-text"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5 4a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zM5 6a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"
+                />
+                <path
+                  d="M14 4.5V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5a.5.5 0 0 1 .354.146l5 5A.5.5 0 0 1 14 6.5zM13 6h-3V3h-5v11h8V6z"
+                />
+              </svg>
+              Documentação
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Page Content -->
+      <div id="content" class="p-4">
+        <nav class="navbar navbar-light bg-light mb-4">
+          <a class="navbar-brand" href="#">Olá, Wesley Santos</a>
+          <button class="btn btn-outline-danger" type="button">Logout</button>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="container">
+          <div class="row text-center mb-4">
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class="card-body">
+                  <i
+                    class="bi bi-display"
+                    style="font-size: 2rem; color: purple"
+                  ></i>
+                  <h5 class="card-title">0</h5>
+                  <p class="card-text">Tickets abertos</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class="card-body">
+                  <i
+                    class="bi bi-check-circle"
+                    style="font-size: 2rem; color: green"
+                  ></i>
+                  <h5 class="card-title">0</h5>
+                  <p class="card-text">Tickets resolvidos</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class="card-body">
+                  <i
+                    class="bi bi-binoculars"
+                    style="font-size: 2rem; color: orange"
+                  ></i>
+                  <h5 class="card-title">0</h5>
+                  <p class="card-text">Revisão de Tickets</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class="card-body">
+                  <i
+                    class="bi bi-x-circle"
+                    style="font-size: 2rem; color: red"
+                  ></i>
+                  <h5 class="card-title">0</h5>
+                  <p class="card-text">Tickets cancelados</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class="card-body">
+                  <i
+                    class="bi bi-hourglass-split"
+                    style="font-size: 2rem; color: teal"
+                  ></i>
+                  <h5 class="card-title">0</h5>
+                  <p class="card-text">Aguardando Aprovação</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-12">
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Buscar..."
+                  aria-label="Search"
+                />
+                <select class="form-select me-2">
+                  <option selected>Todos os Status</option>
+                  <!-- Add options here -->
+                </select>
+                <select class="form-select me-2">
+                  <option selected>Todas as Prioridades</option>
+                  <!-- Add options here -->
+                </select>
+                <select class="form-select me-2">
+                  <option selected>Todas as Mesas</option>
+                  <!-- Add options here -->
+                </select>
+                <button class="btn btn-primary me-2" type="button">
+                  <i class="bi bi-funnel"></i>
+                </button>
+                <button class="btn btn-secondary" type="button">
+                  <i class="bi bi-x-lg"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <table class="table table-dark table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Número do Chamado</th>
+                    <th scope="col">Título</th>
+                    <th scope="col">Responsável</th>
+                    <th scope="col">Prioridade</th>
+                    <th scope="col">Mesa</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Criado em</th>
+                    <th scope="col">Ações</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Add table rows here -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
