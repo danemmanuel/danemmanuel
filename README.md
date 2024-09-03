@@ -1,4 +1,5 @@
 ## Olá, bem vindo ao meu github :)
+
 <div align="center">
   <a href="https://github.com/danemmanuel">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=danemmanuel&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
@@ -19,5 +20,5 @@
   <a href="https://www.linkedin.com/in/rafaella-ballerini-45875016a" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
  
   ![Snake animation](https://github.com/rafaballerini/rafaballerini/blob/output/github-contribution-grid-snake.svg)
- 
+ das
 </div>
